@@ -13,7 +13,7 @@ const Header = () => {
           <a href="/" className="hover:text-secondary transition-colors">Home</a>
           <a href="/menu" className="hover:text-secondary transition-colors">Menu</a>
           <a href="/customization" className="hover:text-secondary transition-colors">Customization</a>
-          <a href="#gallery" className="hover:text-secondary transition-colors">Gallery</a>
+          <a href="/gallery" className="hover:text-secondary transition-colors">Gallery</a>
           <a href="#about" className="hover:text-secondary transition-colors">About Us</a>
           <a href="#order" className="hover:text-secondary transition-colors">Order Online</a>
         </nav>
