@@ -1,12 +1,8 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "@/components/Header";
 import Slideshow from "@/components/Slideshow";
 import Footer from "@/components/Footer";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Index = () => {
   useEffect(() => {
@@ -14,18 +10,6 @@ const Index = () => {
       duration: 1000,
       once: true,
       offset: 100,
-    });
-
-    // GSAP animations for special elements
-    gsap.from(".tagline", {
-      scrollTrigger: {
-        trigger: ".tagline",
-        start: "top 80%",
-      },
-      opacity: 0,
-      y: 30,
-      duration: 1.2,
-      ease: "power3.out",
     });
   }, []);
 
@@ -41,7 +25,7 @@ const Index = () => {
       {/* Tagline */}
       <section className="text-center py-8 px-4">
         <h2 
-          className="tagline font-cursive text-4xl md:text-5xl lg:text-6xl text-primary mb-4"
+          className="font-cursive text-4xl md:text-5xl lg:text-6xl text-primary mb-4 font-bold"
           data-aos="fade-up"
         >
           Homemade. Heart-baked. Happiness delivered.
@@ -63,7 +47,7 @@ const Index = () => {
             <i className="fab fa-whatsapp mr-2"></i>
             Order on WhatsApp
           </a>
-          <a href="#menu" className="btn-primary">
+          <a href="/menu" className="btn-primary">
             <i className="fas fa-cake-candles mr-2"></i>
             View Menu
           </a>
@@ -169,7 +153,7 @@ const Index = () => {
         </div>
 
         <div className="text-center mt-10">
-          <a href="#order" className="btn-primary">
+          <a href="/menu" className="btn-primary">
             See Full Menu
           </a>
         </div>

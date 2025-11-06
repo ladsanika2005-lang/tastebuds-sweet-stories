@@ -129,6 +129,6 @@ All colors MUST be HSL.
   }
 
   .btn-outline {
-    @apply border-2 border-primary text-primary px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary hover:text-primary-foreground;
+    @apply border-2 border-primary-foreground text-primary-foreground px-8 py-3 rounded-full font-medium transition-all duration-300 hover:bg-primary-foreground hover:text-primary;
   }
 }
