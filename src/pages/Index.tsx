@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import Header from "@/components/Header";
 import Slideshow from "@/components/Slideshow";
@@ -43,14 +44,14 @@ const Index = () => {
           straight from our kitchen in Mumbai.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+          <a href="https://wa.me/918779391601" target="_blank" rel="noopener noreferrer" className="btn-secondary">
             <i className="fab fa-whatsapp mr-2"></i>
             Order on WhatsApp
           </a>
-          <a href="/menu" className="btn-primary">
+          <Link to="/menu" className="btn-primary">
             <i className="fas fa-cake-candles mr-2"></i>
             View Menu
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -153,9 +154,9 @@ const Index = () => {
         </div>
 
         <div className="text-center mt-10">
-          <a href="/menu" className="btn-primary">
+          <Link to="/menu" className="btn-primary">
             See Full Menu
-          </a>
+          </Link>
         </div>
       </section>
 

@@ -1,17 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-12 mt-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center gap-6 mb-8">
           <a
-            href="tel:+919876543210"
+            href="tel:+918779391601"
             className="btn-outline inline-flex items-center gap-2 hover:scale-105 transition-transform"
           >
             <i className="fas fa-phone"></i>
             <span>Call Now</span>
           </a>
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/918779391601"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-accent text-accent-foreground px-8 py-3 rounded-full font-medium inline-flex items-center gap-2 hover:scale-105 transition-transform"
@@ -20,7 +22,7 @@ const Footer = () => {
             <span>WhatsApp</span>
           </a>
           <a
-            href="https://instagram.com/tastebudsmumbai"
+            href="https://instagram.com/tastebuds.mumbai"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-outline inline-flex items-center gap-2 hover:scale-105 transition-transform"
@@ -29,11 +31,13 @@ const Footer = () => {
             <span>Instagram</span>
           </a>
           <a
-            href="#feedback"
+            href="https://www.facebook.com/tastebudsmumbai"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-outline inline-flex items-center gap-2 hover:scale-105 transition-transform"
           >
-            <i className="fas fa-comment"></i>
-            <span>Share Feedback</span>
+            <i className="fab fa-facebook"></i>
+            <span>Facebook</span>
           </a>
         </div>
         
